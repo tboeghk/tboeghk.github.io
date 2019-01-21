@@ -44,11 +44,9 @@
 					    </div><!--//primary-info-->
 					    <div class="secondary-info ml-md-auto mt-2">
 						    <ul class="resume-social list-unstyled">
-				                <li class="mb-3"><a href="https://twitter.com/{{ site.data.personal.contact.twitter }}"><span class="fa-container text-center mr-2"><i class="fab fa-twitter fa-fw"></i></span>@{{ site.data.personal.contact.twitter }}</a></li>
-				                <li class="mb-3"><a href="https://github.com/{{ site.data.personal.contact.github }}"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>@{{ site.data.personal.contact.github }}</a></li>
-				                <li class="mb-3"><a href="{{ site.data.personal.contact.xing }}"><span class="fa-container text-center mr-2"><i class="fab fa-xing fa-fw"></i></span>xing.com</a></li>
-								<li class="mb-3"><a href="{{ site.data.personal.contact.meetup }}"><span class="fa-container text-center mr-2"><i class="fab fa-meetup fa-fw"></i></span>meetup.com</a></li>
-				                <!--<li><a href="https://www.thiswayup.de"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>thiswayup.de</a></li>-->
+								{% for social in site.data.personal.contact.social %}
+				                <li class="mb-3"><a href="{{ social.link }}"><span class="fa-container text-center mr-2"><i class="fab fa-{{ social.icon }} fa-fw"></i></span>{{ social.name }}</a></li>
+								{% endfor %}
 						    </ul>
 					    </div><!--//secondary-info-->
 					    
