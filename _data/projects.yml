@@ -5,5 +5,6 @@
     link: http://solr.cool
   - name: BMAX Solr Query Parser
     description: |
-      A boosting ...
+      A boosting dismax query parser for Apache Solr focusing on e-comerce
+      queries.
     link: https://github.com/shopping24/solr-bmax-queryparser
