@@ -1,0 +1,12 @@
+
+.projects-section .resume-timeline:before, .talks-section .resume-timeline:before {
+    background: white;
+}
+
+.resume-company-name {
+    white-space: nowrap;    
+}
+
+.footer, .footer a {
+    color: #bbb;
+}

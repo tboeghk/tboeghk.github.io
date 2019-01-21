@@ -1,0 +1,47 @@
+---
+  skills:
+    - name: Search
+      skills:
+      - name: Solr
+        grade: 90%
+      - name: Java
+        grade: 90%
+      - name: Spring
+        grade: 90%
+      - name: Lucene
+        grade: 80%
+      - name: Elasticsearch
+        grade: 70%
+    - name: Operations
+      skills:
+      - name: Ansible
+        grade: 90%
+      - name: Maven
+        grade: 90%
+      - name: Logstash
+        grade: 90%
+      - name: Kubernetes
+        grade: 80%
+      - name: PostgreSQL
+        grade: 80%
+  others:
+    - Learn To Rank (LTR)
+    - Bash
+    - Git
+    - Jenkins
+    - Travis CI
+    - Filebeat
+    - Artifactory
+    - Graylog
+    - Grafana
+    - Graphite
+    - Tomcat
+    - Nginx
+    - Varnish
+    - MySQL
+    - Redis
+    - Docker
+    - Amazon AWS
+    - LDAP
+    - Zookeeper
+    - Github

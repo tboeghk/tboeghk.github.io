@@ -1,0 +1,9 @@
+---
+  - name: solr.cool
+    description: |
+      A directory of various plugins for the Apache Solr server.
+    link: http://solr.cool
+  - name: BMAX Solr Query Parser
+    description: |
+      A boosting ...
+    link: https://github.com/shopping24/solr-bmax-queryparser

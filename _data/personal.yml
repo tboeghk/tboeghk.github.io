@@ -1,0 +1,40 @@
+---
+  name: Torsten Bøgh Köster
+  title: Search & Operations Engineer
+  image_name: torsten.jpg
+  
+  contact:
+    email: tbk@thiswayup.de
+    github: tboeghk
+    twitter: tboeghk
+    xing: https://www.xing.com/profile/TorstenBogh_Koester
+    meetup: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
+    website: www.thiswayup.de
+  
+  _education:
+    - grade: MSc Informatics (Diplom-Informatik)
+      location: University of Hamburg
+      time: 1999-2006
+    - grade: A-Levels
+      location: Carl-von-Ossietzky Gymnasium Hamburg
+      time: 1998
+
+  misc:
+    - name: Search Technology Meetup Hamburg
+      link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
+      description: I co-organize a roughly quartly meetup in Hamburg focussing on search technology.
+      icon: chalkboard
+
+  interests:
+    - Road bike
+    - Travel
+    - Sailing
+    - Cooking
+
+  _languages:
+    - name: German
+      grade: native
+    - name: English
+      grade: fluent
+    - name: Danish
+      grade: intermediate
