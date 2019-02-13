@@ -1,4 +1,8 @@
 ---
+  - name: Oberservabilitystack (o12stack)
+    description: |
+      A integrated logging and monitoring solution for Kubernetes.
+    link: https://observabilitystack.org
   - name: solr.cool
     description: |
       A directory of various plugins for the Apache Solr server.
