@@ -62,7 +62,7 @@
 			    <div class="row">
 				    <div class="col-lg-9">
 						<section class="resume-section talks-section sexperience-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Talks in 2019</h2>
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Talks</h2>
 						    <div class="resume-section-content">
 								<div class="resume-timeline position-relative">
 									{% for talk in site.data.talks %}
@@ -84,65 +84,45 @@
 								</div>
 						    </div>
 						</section>
-						<section class="resume-section projects-section experience-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Open Source Projects</h2>
-							<div class="resume-section-content">
-								<div class="resume-timeline position-relative">
-									{% for project in site.data.projects %}
-									<article class="resume-timeline-item position-relative pb-1">
-										<div class="resume-timeline-item-header mb-1">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1"><a href="{{ project.link }}">{{ project.name }}</a></h3>
-											</div><!--//row-->
-										</div><!--//resume-timeline-item-header-->
-										{% if project.description %}
-										<div class="resume-timeline-item-desc">
-											<p>{{ project.description }}</p>
-										</div><!--//resume-timeline-item-desc-->
-										{% endif %}
-									</article><!--//resume-timeline-item-->
-									{% endfor %}
-								</div>
-							</div>
-						</section>
+						
 
 						{% if site.data.work %}
 					    <section class="resume-section experience-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
+
+									{% for work in site.data.work %}
 								    <article class="resume-timeline-item position-relative pb-5">
 									    
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Lead Developer</h3>
-										        <div class="resume-company-name ml-auto">Startup Hub</div>
+										        <h3 class="resume-position-title font-weight-bold mb-1">{{ work.position }}</h3>
+										        <div class="resume-company-name ml-auto">{{ work.company }}</div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">2018 - Present</div>
+										    <div class="resume-position-time">{{ work.from }} - {{ work.to }}</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+										    <p>{{ work.description }}</p>
+											{% if work.projects %}
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Key projects:</h4>
 										    <ul>
-											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-											    <li>Maecenas tempus tellus eget.</li>
+												{% for project in work.projects %}
+											    <li>{{ project }}</li>
+											    {% endfor %}
 										    </ul>
+											{% endif %}
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Angular</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Python</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Webpack</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">PostgresSQL</span></li>
+												{% for tech in work.technologies %}
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">{{ tech }}</span></li>
+											    {% endfor %}
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
 								    </article><!--//resume-timeline-item-->
-								    
+									{% endfor %}
+
 							    </div><!--//resume-timeline-->
 							    
 						    </div>
@@ -182,14 +162,14 @@
 					    </section><!--//skills-section-->
 
 					    <section class="resume-section reference-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Miscellaneous</h2>
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Community</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-awards-list">
-									{% for misc in site.data.personal.misc %}
+									{% for c in site.data.personal.community %}
 								    <li class="mb-2 pl-4 position-relative">
-								        <i class="resume-award-icon fas fa-{{ misc.icon }} position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">{{ misc.name }}</div>
-								        <div class="resume-award-desc">{{ misc.description }}</div>
+								        <i class="resume-award-icon fas fa-{{ c.icon }} position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name"><a href="{{ c.link }}">{{ c.name }}</a></div>
+								        <div class="resume-award-desc">{{ c.description }}</div>
 								    </li>
 									{% endfor %}
 							    </ul>
