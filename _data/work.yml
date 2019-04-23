@@ -28,6 +28,7 @@
       - Nginx
       - HAProxy
       - Traefik
+      - Varnish
       - Prometheus
       - Grafana
       - Graphite
@@ -57,6 +58,7 @@
       - Apache Solr
       - Apache Hadoop
       - Apache Mahout
+      - Zookeeper
       - Jenkins
       - Sonar
       - Artifactory
