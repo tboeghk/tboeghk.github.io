@@ -1,5 +1,5 @@
 ---
-layout: pillar
+layout: instance/index
 ---
 
 
