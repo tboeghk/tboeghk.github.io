@@ -7,7 +7,7 @@
                 </div>
                 <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me for your project?</h3>
                 <div class="section-intro mx-auto text-center mb-3 footer-slug">
-                    {{ site.data.personal.slug | markdownify }}
+                    {{ site.data.personal.slug | newline_to_br | markdownify }}
                 </div>
                 <div class="text-center">
                     <a class="theme-btn-on-bg btn" href="contact.html">Let's Talk</a>
@@ -19,7 +19,6 @@
         <footer class="footer text-light text-center py-2">
             <small class="copyright">
                 Copyright &copy; {{ site.data.personal.name }} 2019. 
-                <a class="text-light" href="contact.html">Impressum</a>.
                 Template by <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
         </footer>
         

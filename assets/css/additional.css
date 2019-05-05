@@ -12,6 +12,10 @@
     padding-top: 1rem;
 }
 
+.header-intro-resume {
+    height: 250px;
+}
+
 /* Pillar */
 .projects-section .resume-timeline:before, .talks-section .resume-timeline:before {
     background: white;

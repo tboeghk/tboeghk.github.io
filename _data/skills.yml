@@ -1,20 +1,20 @@
 ---
   intro: | 
-    I have more than 10 years' experience building and operating large scale
+    I have more than 10 years experience building and operating large scale
     search applications primary for ecommerce clients. Below is a quick overview 
     of my main technical skill sets and tools I use on a regular basis. Want 
-    to find out more about my experience? [Check out my online resume](resume.html)
+    to find out more about my experience? [Check out my full resume](resume.html)
   skills:
     - name: Search
       icon: database
       skills:
-      - name: Solr
+      - name: Solr & Lucene
         grade: 90%
       - name: Java
         grade: 90%
       - name: Spring
         grade: 90%
-      - name: Lucene
+      - name: NLP / NER / Learn To Rank
         grade: 80%
       - name: Elasticsearch
         grade: 70%
@@ -23,37 +23,33 @@
       skills:
       - name: Ansible
         grade: 90%
-      - name: Maven
+      - name: Linux
         grade: 90%
-      - name: Logstash
+      - name: Logstash & ELK-Stack
         grade: 90%
-      - name: Kubernetes
+      - name: Kubernetes & Docker
         grade: 80%
       - name: PostgreSQL
         grade: 80%
     - name: Others
-      icon: route
+      icon: map-marked
       skills:
       - name: CI/CD
-        grade: 90%
-  others:
-    - Learn To Rank (LTR)
-    - Bash
-    - Git
-    - Jenkins
-    - Travis CI
-    - Filebeat
-    - Artifactory
-    - Graylog
-    - Grafana
-    - Graphite
-    - Tomcat
-    - Nginx
-    - Varnish
-    - MySQL
-    - Redis
-    - Docker
-    - Amazon AWS
-    - LDAP
-    - Zookeeper
-    - Github
+        grade: 95%
+      - name: Maven
+      - name: Git & GitHub
+      - name: Grafana & Graphite
+      - name: Amazon AWS
+      - name: Jenkins & Travis CI
+      - name: Filebeat
+      - name: Artifactory
+      - name: Graylog
+      - name: Tomcat
+      - name: Nginx
+      - name: Varnish
+      - name: MySQL
+      - name: Redis
+      - name: LDAP
+      - name: Zookeeper
+      - name: Apple DEP & MDM
+      - name: Munki

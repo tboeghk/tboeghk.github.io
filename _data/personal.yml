@@ -8,15 +8,16 @@
     about agile software development. I am metric driven, have a passion for 
     log management and love to [talk about my findings at conferences and meetups](talks.html).
   slug: |
-    Looking for an experienced search & operations engineer to build, tune and ship your search
-    engine? Need a hand running containers in Kubernetes? Let's talk! Just drop me an email at 
-    [tbk@thiswayup.de](mailto:tbk@thiswayup.de).
+    Looking for an experienced search & operations engineer to build, tune and ship your search engine? 
+    Need a hand running containers in Kubernetes? Let's talk! Just drop me an email at [tbk@thiswayup.de](mailto:tbk@thiswayup.de).
 
-  contact:
-    email: tbk@thiswayup.de
-  
+  email: tbk@thiswayup.de
+  phone: +49 17655029293
+
   education:
-    - grade: MSc Informatics (Diplom-Informatik)
+    - grade: |
+        MSc Informatics
+        (Diplom-Informatik)
       location: University of Hamburg
       time: 1999-2006
     - grade: A-Levels
@@ -29,10 +30,10 @@
     - Travel
     - Cooking
 
-  _languages:
+  languages:
     - name: German
       grade: native
     - name: English
-      grade: fluent
+      grade: professional
     - name: Danish
       grade: intermediate
