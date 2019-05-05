@@ -1,0 +1,46 @@
+    
+{% if page.footer-slug %}
+	<section class="section-cta py-5 bg-primary text-white">
+            <div class="container">
+                <div class="text-center">
+                    <img class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="assets/images/{{ site.data.personal.image }}" alt="">
+                </div>
+                <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me for your project?</h3>
+                <div class="section-intro mx-auto text-center mb-3 footer-slug">
+                    {{ site.data.personal.slug | newline_to_br | markdownify }}
+                </div>
+{% comment %}
+                <div class="text-center">
+                    <a class="theme-btn-on-bg btn" href="contact.html">Let's Talk</a>
+                </div>
+{% endcomment %}
+            </div><!--//container-->
+        </section>
+{% endif %}
+        
+        <footer class="footer text-light text-center py-2">
+            <small class="copyright">
+                Copyright &copy; {{ site.data.personal.name }} 2019. 
+                Built with <a class="text-light" href="https://jekyllrb.com" target="_blank">Jekyll</a> and hosted on <a class="text-light" href="https://github.com/tboeghk/tboeghk.github.io" target="_blank">GitHub</a>.
+                Template by <a class="text-light" href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a>.
+            </small>
+        </footer>
+        
+        <!-- Javascript -->          
+        <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+        <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>    
+        
+        <!-- Page Specific JS -->
+        <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script> 
+    
+        <!-- Custom JS -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/flickity-custom.js"></script>
+        
+        <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+        <script type="text/javascript" src="assets/js/demo/style-switcher.js"></script>     
+        
+    </body>
+</html> 

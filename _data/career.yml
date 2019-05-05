@@ -1,0 +1,135 @@
+---
+summary: | 
+    As a software engineer I have expert level knowledge in constructing, developing and 
+    running high traffic web applications. I embrace open source software and am passionate 
+    about agile software development with Scrum. I am metric driven, have a passion for 
+    log management and love to talk about my findings at conferences and meetups.
+experience:
+  - company: shopping24 internet group
+    position: Engineering Lead (CTO)
+    from: 2012
+    to: Present
+    description: |
+      As CTO I am accountable for developing and operating the shopping24 product 
+      search platform. Together with the engineering team I maintain the api and search backend 
+      based on Apache Solr, the product backend systems (Java) and the portal 
+      frontends (PHP). I code on a regular basis in both operations and search 
+      and assist the teams in system- and software architecture challenges.
+    projects:
+      - "Insourcing of server operations: Development of a centralized configuration management using Ansible. Setup of a hybrid cloud hosting using bare metal, VMWare and KVM hypervisors as well as Amazon AWS. Recently pushing the transition into containerization using Docker, Kubernetes and Ceph as distributed storage."
+      - Design and implementation of a inner source e-commerce search solution for the Otto Group based on Apache Solr. Onboarding and consulting of several Otto Group companies like otto.de and Limango.
+      - As a in-house consultant I joined the implementation of the e-commerce search at otto.de and Limango. Implemented technical and relevance search monitoring, extended the CI/CD pipeline to do blue/green deployments.
+      - Building and eventually spun off a SaaS to manage Google and Bing ads at large scale. Wrote an entity extraction as a Apache Solr plugin in order to categorize ad terms. The software is used by multiple tenants inside the Otto Group.
+    technologies:
+      - Apache Solr
+      - Ranklib
+      - Kubernetes
+      - Spring Boot
+      - Java 11
+      - Docker
+      - Kubernetes
+      - Logstash
+      - Filebeat
+      - Graylog
+      - Nginx
+      - HAProxy
+      - Traefik
+      - Varnish
+      - Prometheus
+      - Grafana
+      - Graphite
+      - Elasticsearch
+      - Ansible
+      - KVM
+      - Ceph
+  - company: shopping24 internet group
+    position: Team lead Java development
+    from: 2010
+    to: 2012
+    description: |
+      As a team lead responsible for restructuring and refactoring 
+      the Java API and product management backend.
+    projects:
+      - Recruitment and training of the Java development team. Insourcing of Java development and application support for the existing Java applications.
+      - Review of the existing system and software architecture. Refactoring towards an elastic and service oriented architecture. Moved traffic and storage intensive data to Amazon AWS.
+      - Introduced Scrum as development process. Established a modern Java development infrastructure for Continuous Integration und Continuous Delivery.
+      - Conceptual design and implementation of a modular REST api for delivering affiliate product data based on Apache Solr.
+      - Centralizing logging, server, application and business metrics for real time analysis.
+    technologies:
+      - Apache Maven
+      - Amazon EC2
+      - Amazon S3
+      - Amazon CloudFront
+      - MongoDb
+      - Apache Solr
+      - Apache Hadoop
+      - Apache Mahout
+      - Zookeeper
+      - Jenkins
+      - Sonar
+      - Artifactory
+      - Github
+      - Redmine
+      - New Relic
+      - Graylog2
+      - Logstash
+      - StatsD
+      - Graphite
+      - Grafana
+      - Collectd
+  - company: Deutscher Ring
+    position: Software Architect Java
+    from: 2005
+    to: 2010
+    description: |
+      Developer, architect and in-house consultant for Java based 
+      projects focusing on integrating legacy systems into modern 
+      web UIs. Technical lead for internet and intranet web applications. 
+      Maintainer of the Java development and continuous integration 
+      infrastructure.
+    projects:
+      - Prepared and led advanced in-house Java, Spring Framework, Maven & Eclipse trainings
+      - Technical team lead for web applications serving customers and insurance brokers.
+      - Switched the complete Java codebase from building with Ant to Maven, maintained build server for continuous integration and Maven infrastructure components
+      - Created an Eclipse RCP based distribution platform for remote offline viewing of data warehouse data cubes
+    technologies:
+      - Java
+      - Eclipse RCP
+      - Spring
+      - Hibernate
+      - Spring Security
+      - Central Authentication Service (CAS)
+      - IBM DB2
+      - IBM Content Manager
+      - IBM MQSeries
+      - Websphere Application Server
+      - Tomcat
+      - Lucene
+      - Hudson
+      - Sonar
+      - Artifactory
+  - company: Freelancer
+    position: Software engineer & server administrator
+    from: 2002
+    to: 2005
+    description: |
+      Acquired and implemented Java and PHP development jobs. Gained 
+      knowledge of Linux server administration in high traffic environments
+      as systems administrator for the largest soccer community in Germany.
+    technologies:
+      - PHP
+      - MySQL
+      - Wordpress
+      - Lighttpd
+      - Debian Linux
+  - company: Have-IT
+    position: Software developer PHP & Perl
+    from: 2000
+    to: 2002
+    description: |
+      Developed custom tailored applications for german high traffic 
+      websites in PHP and Perl.
+    technologies:
+      - PHP
+      - Perl
+      - LAMP stack
