@@ -3,24 +3,32 @@ intro: |
   I love to talk about my findings at conferences and meetups.
   Find some of my recent and upcoming talks below.
 upcoming:
-#    - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
-#    conference: JAX 2019
-#    conference_link: https://jax.de
-#    date: 6 - 10 May 2019
-#    link: https://jax.de/cloud-container-serverless/kubernetes-the-heart-way-putting-kubernetes-in-production/
-#    abstract: |
-#      A talk focussing on the skills needed to run an Kubernetes cluster from a
-#      developers advocate perspective.
-#  - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
-#    conference: JAX 2019
-#    conference_link: https://jax.de
-#    date: 6 - 10 May 2019
-#    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
-#  - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
-#    conference: DevOpsCon 2019
-#    conference_link: https://devopsconference.de
-#    date: 11 - 14 June 2019 
-#    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
+  - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
+    conference: JAX 2019
+    conference_link: https://jax.de
+    date: 6 - 10 May 2019
+    link: https://jax.de/cloud-container-serverless/kubernetes-the-heart-way-putting-kubernetes-in-production/
+    abstract: |
+        A talk focussing on the skills needed to run an Kubernetes cluster from a
+        developers advocate perspective.
+  - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
+    conference: JAX 2019
+    conference_link: https://jax.de
+    date: 6 - 10 May 2019
+    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
+    abstract: |
+        For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
+        and we're presenting our approach combining a shared nothing architecture with a
+        centralized logging approach (German version).
+  - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
+    conference: DevOpsCon 2019
+    conference_link: https://devopsconference.de
+    date: 11 - 14 June 2019 
+    link: https://devopsconference.de/logging-monitoring-diagnostics/shared-nothing-logging-infrastructure-overcoming-the-challenges-of-container-based-microservice-infrastructures/
+    abstract: |
+        For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
+        and we're presenting our approach combining a shared nothing architecture with a
+        centralized logging approach.
 
 recent:
   - name: Beyond Cloud

@@ -17,8 +17,41 @@
     </header><!--//header-->
 
     <section class="section pt-5">
+			<div class="container blog-cards">
+				<h3 class="section-title font-weight-bold text-center mb-3">Upcoming Talks</h3>
+				
+				<div class="row">
+
+					{% for talk in site.data.talks.upcoming %}
+					<div class="col-12 col-md-6 col-lg-4 mb-5">
+						<div class="card rounded-0 border-0 shadow-sm eq-height">
+							<div class="card-body pb-4">
+								
+								<h4 class="card-title mb-2"><a href="{{ talk.link }}">{{ talk.name }}</a></h4>
+								<div class="card-text">
+									<div class="excerpt">
+										{{ talk.abstract | markdownify }}
+									</div>
+								</div>
+								
+							</div>
+							<div class="card-footer border-0">
+								<ul class="meta list-inline mb-0">
+									<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ talk.date }}</li>
+									<li class="list-inline-item"><i class="fab fa-slideshare mr-2"></i><a href="{{ talk.conference_link }}">{{ talk.conference }}</a></li>
+								</ul>
+							</div>
+						</div><!--//card-->
+					</div>
+					{% endfor %}
+					
+				</div>
+			</div><!--//container-->
+		</section><!--//section-->
+
+    <section class="section pt-5">
         <div class="container">
-	        
+
 			{% for talk in site.data.talks.recent %}
 	        <div class="media mb-5 flex-column flex-lg-row bg-white shadow-sm">
 		        <div class="talk-media-holder embed-responsive embed-responsive-16by9 mr-md-3">
