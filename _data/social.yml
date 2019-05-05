@@ -8,9 +8,12 @@
 - name: "Xing"
   link: https://www.xing.com/profile/TorstenBogh_Koester
   icon: xing
-#      - name: "meetup.com"
-#        link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
-#        icon: meetup
+- name: "Docker"
+  link: https://hub.docker.com/u/tboeghk
+  icon: docker
+- name: "meetup.com"
+  link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
+  icon: meetup
 - name: "Flickr"
   link: https://www.flickr.com/people/tboeghk/
   icon: flickr

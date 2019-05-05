@@ -1,5 +1,5 @@
 ---
-layout: instance/index
+layout: instance/talks
 footer-slug: true
 ---
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>{{ site.title }}</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome JS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
+    
+    <!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/{{ site.theme_css }}.css">
+	<link id="additional-style" rel="stylesheet" href="assets/css/additional.css">
+
+</head>
+<body>
+        <header class="header">      
+            <div class="top-bar theme-bg-primary-darken">
+                <div class="container-fluid">
+                
+                    <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+                        
+                        <ul class="social-list list-inline mb-0">
+                        {% for social in site.data.social %}
+                            <li class="list-inline-item"><a class="text-white" href="{{ social.link }}"><i class="fab fa-{{ social.icon }} fa-fw"></i></a></li>
+                        {% endfor %}
+                        </ul><!--//social-list-->
+                        
+        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse text-uppercase" id="navigation">
+                            <ul class="navbar-nav ml-lg-auto">
+                                <li class="nav-item {% if page.name == 'index.md' %}active{% endif %} mr-lg-3">
+                                    <a class="nav-link" href="index.html">About {% if page.name == 'index.md' %}<span class="sr-only">(current)</span>{% endif %}</a>
+                                </li>
+    {% comment %}
+                                <li class="nav-item mr-lg-3">
+                                   <a class="nav-link" href="projects.html">Projects</a>
+                                </li>
+    {% endcomment %}
+                                <li class="nav-item {% if page.name == 'talks.md' %}active{% endif %} mr-lg-3">
+                                    <a class="nav-link" href="talks.html">Talks</a>
+                                </li>
+    {% comment %}
+                                <li class="nav-item mr-lg-3">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+    {% endcomment %}
+                                <li class="nav-item {% if page.name == 'resume.md' %}active{% endif %} mr-lg-3">
+                                    <a class="nav-link" href="resume.html">Resume</a>
+                                </li>
+
+                                <li class="nav-item {% if page.name == 'contact.md' %}active{% endif %} mr-lg-3">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <span id="slide-line"></span>
+                        </div>
+                        
+                        
+                        
+                    </nav>
+                
+                </div><!--//container-->
+                
+            </div><!--//top-bar-->

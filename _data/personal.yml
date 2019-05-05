@@ -1,40 +1,27 @@
 ---
   name: Torsten Bøgh Köster
-  title: Search & Operations Engineer
-  image_name: torsten.jpg
-  
+  title: Senior Search & Operations Engineer
+  image: torsten.jpg
+  intro: | 
+    As a software engineer I have expert level knowledge in constructing, developing and 
+    running high traffic web applications. I embrace open source software and am passionate 
+    about agile software development. I am metric driven, have a passion for 
+    log management and love to [talk about my findings at conferences and meetups](talks.html).
+  slug: |
+    Looking for an experienced search & operations engineer to build, tune and ship your search
+    engine? Need a hand running containers in Kubernetes? Let's talk! Just drop me an email at 
+    [tbk@thiswayup.de](mailto:tbk@thiswayup.de).
+
   contact:
     email: tbk@thiswayup.de
-    website: www.thiswayup.de
   
-  _education:
+  education:
     - grade: MSc Informatics (Diplom-Informatik)
       location: University of Hamburg
       time: 1999-2006
     - grade: A-Levels
       location: Carl-von-Ossietzky Gymnasium Hamburg
       time: 1998
-
-  community:
-    - name: Search Technology Meetup Hamburg
-      link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
-      description: I co-organize a roughly quartly meetup in Hamburg focussing on search technology.
-      icon: chalkboard
-#    - name: Oberservabilitystack (o12stack)
-#      link: https://observabilitystack.org
-#      description: |
-#        A integrated logging and monitoring solution for Kubernetes.
-    - name: solr.cool
-      link: http://solr.cool
-      description: |
-        A directory of various plugins for the Apache Solr server.
-      icon: server
-    - name: BMAX Solr Query Parser
-      description: |
-        A boosting dismax query parser for Apache Solr focusing on e-comerce
-        queries.
-      link: https://github.com/shopping24/solr-bmax-queryparser
-      icon: server
 
   interests:
     - Road bike

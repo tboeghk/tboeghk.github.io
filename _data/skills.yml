@@ -1,6 +1,12 @@
 ---
+  intro: | 
+    I have more than 10 years' experience building and operating large scale
+    search applications primary for ecommerce clients. Below is a quick overview 
+    of my main technical skill sets and tools I use on a regular basis. Want 
+    to find out more about my experience? [Check out my online resume](resume.html)
   skills:
     - name: Search
+      icon: database
       skills:
       - name: Solr
         grade: 90%
@@ -13,6 +19,7 @@
       - name: Elasticsearch
         grade: 70%
     - name: Operations
+      icon: server
       skills:
       - name: Ansible
         grade: 90%
@@ -24,6 +31,11 @@
         grade: 80%
       - name: PostgreSQL
         grade: 80%
+    - name: Others
+      icon: route
+      skills:
+      - name: CI/CD
+        grade: 90%
   others:
     - Learn To Rank (LTR)
     - Bash

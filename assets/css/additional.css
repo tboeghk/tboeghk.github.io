@@ -1,4 +1,18 @@
+/* Instance */
+.header-intro .bio a, .footer-slug a {
+    color: #fff;
+    text-decoration: underline;
+}
 
+.skills-icon-holder i {
+    color: #fff;
+}
+
+.skills-icon-holder {
+    padding-top: 1rem;
+}
+
+/* Pillar */
 .projects-section .resume-timeline:before, .talks-section .resume-timeline:before {
     background: white;
 }
@@ -10,3 +24,4 @@
 .footer, .footer a {
     color: #bbb;
 }
+
