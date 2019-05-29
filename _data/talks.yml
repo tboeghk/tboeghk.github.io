@@ -3,23 +3,6 @@ intro: |
   I love to talk about my findings at conferences and meetups.
   Find some of my recent and upcoming talks below.
 upcoming:
-  - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
-    conference: JAX 2019
-    conference_link: https://jax.de
-    date: 6 - 10 May 2019
-    link: https://jax.de/cloud-container-serverless/kubernetes-the-heart-way-putting-kubernetes-in-production/
-    abstract: |
-        A talk focussing on the skills needed to run an Kubernetes cluster from a
-        developers advocate perspective.
-  - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
-    conference: JAX 2019
-    conference_link: https://jax.de
-    date: 6 - 10 May 2019
-    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
-    abstract: |
-        For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
-        and we're presenting our approach combining a shared nothing architecture with a
-        centralized logging approach (German version).
   - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
     conference: DevOpsCon 2019
     conference_link: https://devopsconference.de
@@ -30,7 +13,47 @@ upcoming:
         and we're presenting our approach combining a shared nothing architecture with a
         centralized logging approach.
 
+  - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
+    conference: W-JAX 2019
+    conference_link: https://jax.de
+    date: November 2019 
+    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
+
+  - name: "Workshop: Observability & Log Management für Container-Umgebungen"
+    conference: W-JAX 2019
+    conference_link: https://jax.de
+    date: November 2019 
+    link: https://jax.de/cloud-container-serverless/workshop-observability-log-management-fuer-container-umgebungen/
+    abstract: |
+        n diesem Workshop stellen wir die Bausteine einer modernen Observability-Infrastruktur vor (Filebeat, Logstash, 
+        Graylog, Elastic, Prometheus, Grafana). Wir starten mit einem nackten Kubernetes-Cluster und erweitern aufbauend 
+        aufeinander den Observability-Toolstack.
+
+
 recent:
+  - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
+    type: speaker-deck
+    conference: JAX 2019
+    conference_link: https://jax.de
+    date: 6 - 10 May 2019
+    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
+    src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    abstract: |
+        For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
+        and we're presenting our approach combining a shared nothing architecture with a
+        centralized logging approach (German version).
+
+  - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
+    type: speaker-deck
+    conference: JAX 2019
+    conference_link: https://jax.de
+    date: May 2019
+    link: https://jax.de/cloud-container-serverless/kubernetes-the-heart-way-putting-kubernetes-in-production/
+    src: //speakerdeck.com/player/f09a0ac2d271451780e02868dd47bc29
+    abstract: |
+        A talk focussing on the skills needed to run an Kubernetes cluster from a
+        developers advocate perspective.
+
   - name: Beyond Cloud
     type: youtube
     conference: DevOpsCon 2018
