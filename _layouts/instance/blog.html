@@ -6,7 +6,7 @@
 			        <img class="profile-medium d-inline-block rounded-circle mr-md-4 align-self-center mb-2 mb-lg-0" src="/assets/images/{{ site.data.personal.image }}" alt="">
 			        <div class="media-body align-self-center">
 			            <h2 class="page-heading mb-2">{{ site.data.personal.name }}'s Blog</h2>
-			            <div class="page-heading-tagline mb-3">I blog #dev</div>
+			            <div class="page-heading-tagline mb-3">{{ site.data.blog.slug }}</div>
 			        </div>
 		        </div>
 		       
@@ -20,36 +20,44 @@
         <div class="container blog-cards">	        
 	        
 	        <div class="row">
+
+				{% for post in site.posts %}
+				{% if post.featured %}
 		        <div class="col-12">
 			        <div class="featured-card d-md-table card rounded-0 border-0 shadow-sm mb-5">
-						<div class="featured-card-image card-img-container position-relative d-md-table-cell">					        
+						<div class="featured-card-image card-img-container position-relative d-md-table-cell"
+							 style="background-image: url({{ post.image | default: site.data.blog.default_images | sample }});">					        
 						    <span class="badge badge-success mb-2 position-absolute">Featured</span>
 						    <div class="card-img-overlay overlay-mask text-center p-0">
-						        <a class="overlay-mask-link position-absolute w-100 h-100" href="blog-post.html"></a>
+						        <a class="overlay-mask-link position-absolute w-100 h-100" href="{{ post.url }}"></a>
 							</div>
 						</div>
 						<div class="featured-card-body card-body d-md-table-cell  pb-4">
 							
-							<h4 class="card-title mb-2"><a href="blog-post.html">How to Create an Angular Library</a></h4>
+							<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a> {{ post.language }}</h4>
 							<div class="card-text">
-								<div class="excerpt mb-3"> Blog post intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis venenatis...</div>
-								<a class="btn btn-primary d-none d-md-inline-block" href="blog-post.html">Read more</a>
+								<div class="excerpt mb-3"> {{ post.excerpt | strip_html }}</div>
+								<a class="btn btn-primary d-none d-md-inline-block" href="{{ post.url }}">Read more</a>
 							</div>
 						</div>
 						<div class="card-footer border-0 d-md-none">
 							<ul class="meta list-inline mb-0">
-								<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>June 18, 2018</li>
-								<li class="list-inline-item"><i class="fas fa-comment mr-2"></i><a href="#">8 Comments</a></li>
+								<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
+								<li class="list-inline-item"><i class="fas fa-clock mr-2"></i>{{ post.content | number_of_words | divided_by: 250 }}m read</li>
 							</ul>
 						</div>
 				    </div><!--//card-->
 				</div>
+				{% break %}
+				{% endif %}
+				{% endfor %}
 				
 				{% for post in site.posts %}
+				{% unless post.featured %}
 		        <div class="col-12 col-md-6 col-lg-4 mb-5">
 			        <div class="card rounded-0 border-0 shadow-sm eq-height">
 						<div class="card-img-container position-relative">
-					        <img class="card-img-top rounded-0" src="/assets/images/blog/blog-post-thumb-2.jpg" alt="">
+					        <img class="card-img-top rounded-0" src="{{ post.image | default: site.data.blog.default_images | sample }}" alt="">
 					        <div class="card-img-overlay overlay-mask text-center p-0">
 						        <div class="overlay-mask-content text-center w-100 position-absolute">
 								    <a class="btn btn-primary" href="{{ post.url }}">Read more</a>
@@ -62,18 +70,22 @@
 							<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h4>
 							<div class="card-text">
 								
-								<div class="excerpt"> Blog post intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis venenatis...</div>
+								<div class="excerpt">{{ post.excerpt | strip_html }}</div>
 							</div>
 							
 						</div>
 						<div class="card-footer border-0">
 							<ul class="meta list-inline mb-0">
 								<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
-								<li class="list-inline-item"><i class="fas fa-comment mr-2"></i><a href="#">12 Comments</a></li>
+								<li class="list-inline-item"><i class="fas fa-clock  mr-2"></i>{{ post.content | number_of_words | divided_by: 250 }}m read</li>
+								{% if post.language %}
+								<li class="list-inline-item"><i class="fas fa-bullhorn  mr-2"></i>{{ post.language }}</li>
+								{% endif %}
 							</ul>
 						</div>
 				    </div><!--//card-->
 				</div>
+				{% endunless %}
 				{% endfor %}
 
 {% comment %}

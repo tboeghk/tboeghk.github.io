@@ -16,6 +16,23 @@
     height: 250px;
 }
 
+.social-list-color .xing {
+    background-color: #009090;
+}
+
+.social-list-color .flickr {
+    background-color: #576477;
+}
+
+.social-list-color .docker {
+    background-color: #099cec;
+}
+
+.social-list-color .meetup {
+    background-color: #f65858;
+}
+
+
 /* Pillar */
 .projects-section .resume-timeline:before, .talks-section .resume-timeline:before {
     background: white;

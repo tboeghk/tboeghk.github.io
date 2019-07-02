@@ -10,9 +10,9 @@
       skills:
       - name: Solr & Lucene
         grade: 90%
-      - name: Java
+      - name: Java / Spring Boot
         grade: 90%
-      - name: Spring
+      - name: PostgreSQL
         grade: 90%
       - name: NLP / NER / Learn To Rank
         grade: 80%
@@ -21,7 +21,7 @@
     - name: Operations
       icon: server
       skills:
-      - name: Ansible
+      - name: Ansible & Terraform
         grade: 90%
       - name: Linux
         grade: 90%
@@ -29,7 +29,7 @@
         grade: 90%
       - name: Kubernetes & Docker
         grade: 80%
-      - name: PostgreSQL
+      - name: HAProxy, Nginx & TLS
         grade: 80%
     - name: Others
       icon: map-marked
