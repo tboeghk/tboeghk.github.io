@@ -16,6 +16,42 @@
     height: 250px;
 }
 
+.social-list-color .xing {
+    background-color: #009090;
+}
+
+.social-list-color .flickr {
+    background-color: #576477;
+}
+
+.social-list-color .docker {
+    background-color: #099cec;
+}
+
+.social-list-color .meetup {
+    background-color: #f65858;
+}
+
+/* Blog */
+.single-post-wrapper h4 {
+    margin-top: 2em;
+}
+
+.single-post-wrapper p {
+    margin-bottom: 2rem;
+}
+
+.single-post-wrapper a {
+    color: #333;
+}
+
+div.highlighter-rouge {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    padding: 1em;
+}
+
+
+
 /* Pillar */
 .projects-section .resume-timeline:before, .talks-section .resume-timeline:before {
     background: white;

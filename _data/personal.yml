@@ -9,10 +9,10 @@
     log management and love to [talk about my findings at conferences and meetups](talks.html).
   slug: |
     Looking for an experienced search & operations engineer to build, tune and ship your search engine? 
-    Need a hand running containers in Kubernetes? Let's talk! Just drop me an email at [tbk@thiswayup.de](mailto:tbk@thiswayup.de).
+    Need a hand running large scale distributed systems or containers in Kubernetes? 
+    [Let's talk!](mailto:tbk@thiswayup.de)
 
   email: tbk@thiswayup.de
-  phone: +49 17655029293
 
   education:
     - grade: |

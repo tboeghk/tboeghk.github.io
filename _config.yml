@@ -4,6 +4,8 @@ author: Torsten Bøgh Köster
 description: Torsten Bøgh Köster - Search and Operations Engineer
 theme_css: theme-10
 url: https://wwwthiswayup.de
+excerpt_separator: <!--more-->
+permalink: "/blog/:year/:title.html"
 exclude:
   - _original
   - CNAME
