@@ -21,16 +21,16 @@
     - name: Operations
       icon: server
       skills:
-      - name: Ansible & Terraform
+      - name: Ansible, Terraform & Salt Stack
         grade: 90%
       - name: Linux
         grade: 90%
-      - name: Logstash & ELK-Stack
+      - name: Logstash, ELK & Graylog
         grade: 90%
       - name: Kubernetes & Docker
-        grade: 80%
+        grade: 85%
       - name: HAProxy, Nginx & TLS
-        grade: 80%
+        grade: 85%
     - name: Others
       icon: map-marked
       skills:
@@ -38,7 +38,7 @@
         grade: 95%
       - name: Maven
       - name: Git & GitHub
-      - name: Grafana & Graphite
+      - name: Grafana, Graphite & Prometheus
       - name: Amazon AWS
       - name: Jenkins & Travis CI
       - name: Filebeat

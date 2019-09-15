@@ -3,25 +3,17 @@ intro: |
   I love to talk about my findings at conferences and meetups.
   Find some of my recent and upcoming talks below.
 upcoming:
+
+
   - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
-    conference: DevOpsCon 2019
-    conference_link: https://devopsconference.de
-    date: 11 - 14 June 2019
-    link: https://devopsconference.de/logging-monitoring-diagnostics/shared-nothing-logging-infrastructure-overcoming-the-challenges-of-container-based-microservice-infrastructures/
+    conference: W-JAX 2019
+    conference_link: https://jax.de
+    date: November 2019 
+    link: https://jax.de/cloud-container-serverless/shared-nothing-logging-infrastruktur/
     abstract: |
         For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
         and we're presenting our approach combining a shared nothing architecture with a
         centralized logging approach.
-
-#  - name: "Shared Nothing Logging Infrastructure: Overcoming the challenges of container based Microservice infrastructures"
-#    conference: W-JAX 2019
-#    conference_link: https://jax.de
-#    date: November 2019 
-#    link: https://jax.de/cloud-container-serverless/logging-fuer-microservices-und-container-wir-bauen-eine-shared-nothing-logging-infrastruktur/
-#    abstract: |
-#        For this talk I joined forces with [@backstreetkiwi](https://www.nikolauswinter.de)
-#        and we're presenting our approach combining a shared nothing architecture with a
-#        centralized logging approach.
 
   - name: "Workshop: Observability & Log Management für Container-Umgebungen"
     conference: W-JAX 2019
@@ -29,10 +21,21 @@ upcoming:
     date: November 2019 
     link: https://jax.de/cloud-container-serverless/workshop-observability-log-management-fuer-container-umgebungen/
     abstract: |
-        n diesem Workshop stellen wir die Bausteine einer modernen Observability-Infrastruktur vor (Filebeat, Logstash, 
+        In diesem Workshop stellen wir die Bausteine einer modernen Observability-Infrastruktur vor (Filebeat, Logstash, 
         Graylog, Elastic, Prometheus, Grafana). Wir starten mit einem nackten Kubernetes-Cluster und erweitern aufbauend 
         aufeinander den Observability-Toolstack.
 
+  - name: "Workshop: Observability & Log Management für Container-Umgebungen"
+    conference: DevOpsCon 2019
+    conference_link: https://devopsconference.de
+    date: December 2019 
+    link: https://devopsconference.de/monitoring-traceability-diagnostics/monitoring-workshop-open-source-observability-and-log-management-in-container-environments/
+    abstract: |
+        In this workshop we’ll walk through the building blocks of a modern monitoring and observability infrastructure 
+        (e.g. Filebeat, Logstash, Graylog, Elastic, Prometheus, Grafana). We’ll also shed light on other solutions like 
+        e.g. Loki and Kibana. We’ll start off with a naked Kubernetes cluster, extending the monitoring capabilities step 
+        by step. We’ll deploy typical monitoring targets like a Spring Boot application or a WordPress blog. Together 
+        we’ll develop monitoring strategies for applications, ingresses and the surrounding container environment.
 
 recent:
   - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
