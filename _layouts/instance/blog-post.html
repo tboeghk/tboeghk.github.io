@@ -8,7 +8,7 @@
 		        <img class="profile-small d-inline-block rounded-circle mb-3" src="/assets/images/{{ site.data.personal.image }}" alt="">
 		        <ul class="page-heading-post-meta list-inline mb-0">
 					<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ page.date | date_to_string }}</li>
-					<li class="list-inline-item"><i class="fas fa-clock mr-2"></i>{{ page.content | number_of_words | divided_by: 250 }}m read</li>
+					<li class="list-inline-item"><i class="fas fa-clock mr-2"></i>{{ page.content | number_of_words | divided_by: 200 }}m read</li>
 					{% if page.language %}
 					<li class="list-inline-item"><i class="fas fa-bullhorn mr-2"></i>{{ page.language }}</li>
 					{% endif %}
@@ -20,7 +20,8 @@
         
     <section class="single-post-wrapper single-col-max-width py-5 px-4 mx-auto">
 	        <div class="section-row">
-		        <div class="cover-image mb-4"><img class="img-fluid" src="/assets/images/blog/blog-post-thumb-1.jpg" alt=""></div>
+				<div class="cover-image mb-4"><img class="img-fluid" 
+					src="{{ page.image | default: site.data.blog.default_images | sample }}" alt=""></div>
 
 {{ page.content }}
 

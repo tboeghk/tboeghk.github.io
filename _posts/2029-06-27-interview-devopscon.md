@@ -1,6 +1,8 @@
 ---
 layout: instance/blog-post
-title:  "Bummsfallara"
+title: JAXenter Interview
+tagline: "„Jedes Entwicklungsteam hat eigene Möglichkeiten, das Gold aus dem Inhalt seiner Logdaten zu heben“"
+language: 🇩🇪
 ---
 
 Im Zuge der DevOpsCon in Berlin hatten [Nikolaus](http://www.nikolauswinter.de) und ich die Möglichkeit,

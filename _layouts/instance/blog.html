@@ -32,19 +32,19 @@
 						        <a class="overlay-mask-link position-absolute w-100 h-100" href="{{ post.url }}"></a>
 							</div>
 						</div>
-						<div class="featured-card-body card-body d-md-table-cell  pb-4">
+						<div class="featured-card-body card-body d-md-table-cell pb-4">
 							
 							<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a> {{ post.language }}</h4>
 							<div class="card-text">
 								<div class="excerpt mb-3"> {{ post.excerpt | strip_html }}</div>
 								<a class="btn btn-primary d-none d-md-inline-block" href="{{ post.url }}">Read more</a>
 							</div>
-						</div>
-						<div class="card-footer border-0 d-md-none">
-							<ul class="meta list-inline mb-0">
-								<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
-								<li class="list-inline-item"><i class="fas fa-clock mr-2"></i>{{ post.content | number_of_words | divided_by: 250 }}m read</li>
-							</ul>
+							<div class="card-footer border-0 d-md-none">
+								<ul class="meta list-inline mb-0">
+									<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
+									<li class="list-inline-item"><i class="fas fa-clock mr-2"></i>{{ post.content | number_of_words | divided_by: 200 }}m read</li>
+								</ul>
+							</div>
 						</div>
 				    </div><!--//card-->
 				</div>
@@ -77,7 +77,7 @@
 						<div class="card-footer border-0">
 							<ul class="meta list-inline mb-0">
 								<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
-								<li class="list-inline-item"><i class="fas fa-clock  mr-2"></i>{{ post.content | number_of_words | divided_by: 250 }}m read</li>
+								<li class="list-inline-item"><i class="fas fa-clock  mr-2"></i>{{ post.content | number_of_words | divided_by: 200 }}m read</li>
 								{% if post.language %}
 								<li class="list-inline-item"><i class="fas fa-bullhorn  mr-2"></i>{{ post.language }}</li>
 								{% endif %}
