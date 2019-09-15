@@ -9,3 +9,4 @@ permalink: "/blog/:year/:title.html"
 exclude:
   - _original
   - CNAME
+  - README.md
