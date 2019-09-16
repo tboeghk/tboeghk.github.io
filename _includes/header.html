@@ -12,9 +12,8 @@
 
 {% if page.image %}
     <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@tboeghk" />
-    <meta name="twitter:site" content="@tboeghk" />
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip }}" />
     <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
