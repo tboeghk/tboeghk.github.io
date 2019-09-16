@@ -7,7 +7,7 @@ featured: true
 ---
 
 Logstashs regular expression engine [_Grok_](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html) is the swiss army knife when
-it komes to mine gold in your logfiles. Besides pure log enrichment,
+it comes to mine gold in your logfiles. Besides pure log enrichment,
 metric gathering of log data is a common requirement. Unfortunately Logstash
 is lacking a native solution to export custom metrics to [Prometheus](https://prometheus.io/). In 
 this post, I'll walk you through a solution utilizing the [_graphite-exporter_](https://github.com/prometheus/graphite_exporter)
