@@ -8,6 +8,6 @@ is not free. A usage license must be purchased by
 
 ```
 docker run -it -v $(pwd):/srv/jekyll \
-    -p 4000:4000 jekyll/jekyll:3.8.5 \
+    -p 4000:4000 jekyll/jekyll:3.8 \
     jekyll serve --watch
 ```
