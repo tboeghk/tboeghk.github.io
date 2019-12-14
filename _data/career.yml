@@ -5,6 +5,27 @@ summary: |
     about agile software development with Scrum. I am metric driven, have a passion for 
     log management and love to talk about my findings at conferences and meetups.
 experience:
+  - company: Freelancer
+    position: Senior Search & Operations Engineer
+    from: 2019
+    to: present
+    description: |
+      As a Senior Search & Operations Engineer I cater both customers facing challenges
+      in their search or operations environment (or both). I build Kubernetes clusters
+      with _infrastructure as code_ and _observability_ in mind both in the cloud and
+      on-premise.
+    technologies:
+      - Ansible
+      - Kubernetes
+      - Terraform
+      - Logstash, Filebeat & Graylog
+      - Prometheus & Grafana
+      - Amazon AWS
+      - Digital Ocean
+      - Google GCP
+      - Traefik
+      - Keycloak
+  
   - company: shopping24 internet group
     position: Engineering Lead (CTO)
     from: 2012

@@ -62,7 +62,7 @@
 										    <div class="resume-position-time">{{ work.from }} - {{ work.to }}</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>{{ work.description }}</p>
+										    <p>{{ work.description | markdownify }}</p>
 											{% if work.projects %}
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Key projects:</h4>
 										    <ul>

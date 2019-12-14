@@ -23,13 +23,13 @@
       skills:
       - name: Ansible, Terraform & Salt Stack
         grade: 90%
-      - name: Linux
+      - name: Prometheus, Grafana
         grade: 90%
       - name: Logstash, ELK & Graylog
         grade: 90%
       - name: Kubernetes & Docker
         grade: 85%
-      - name: HAProxy, Nginx & TLS
+      - name: HAProxy, Nginx, Traefik & TLS
         grade: 85%
     - name: Others
       icon: map-marked
@@ -39,7 +39,7 @@
       - name: Maven
       - name: Git & GitHub
       - name: Grafana, Graphite & Prometheus
-      - name: Amazon AWS
+      - name: AWS, Digital Ocean, GCP
       - name: Jenkins & Travis CI
       - name: Filebeat
       - name: Artifactory
