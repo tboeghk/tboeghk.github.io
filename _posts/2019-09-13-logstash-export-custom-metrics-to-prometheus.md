@@ -3,7 +3,6 @@ layout: instance/blog-post
 title: "Logstash: exporting custom metrics to Prometheus"
 tagline: "mine the gold in your logfiles"
 image: /assets/images/blog/logs-winter.jpg
-featured: true
 ---
 
 Logstashs regular expression engine [_Grok_](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html) is the swiss army knife when
