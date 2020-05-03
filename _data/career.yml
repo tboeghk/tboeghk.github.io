@@ -14,6 +14,16 @@ experience:
       in their search or operations environment (or both). I build Kubernetes clusters
       with _infrastructure as code_ and _observability_ in mind both in the cloud and
       on-premise.
+    projects:
+      - Introduction of Ansible and infrastructure as code in a large on-premise infrastructure.
+        Automated and scalable setup of Kubernetes clusters using Ansible and kubeadm.
+        Log management and monitoring for two data centers using Graylog and Prometheus.
+      - Seeding the idea of infrastructure as code for both on-premise and cloud infrastructure.
+        Setup of SaltStack for the on-premise environment and Terraform for AWS infrastructure. 
+        Automated setup of Kubernetes (EKS) clusters including VPCs and ingress handling.
+      - Migration from on-premise infrastructure to Google GCP including site-2-site VPN, dialin
+        VPN and scalable Kubernetes clusters.
+      #- Portable Workshop cloud
     technologies:
       - Ansible
       - Kubernetes

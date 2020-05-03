@@ -64,7 +64,9 @@
 									    <div class="resume-timeline-item-desc">
 										    <p>{{ work.description | markdownify }}</p>
 											{% if work.projects %}
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Key projects:</h4>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">
+												Key {% if work.company == 'Freelancer' %}customer{% endif %} projects:
+											</h4>
 										    <ul>
 												{% for project in work.projects %}
 											    <li>{{ project }}</li>
