@@ -3,7 +3,6 @@ layout: instance/blog-post
 title: "Configuration management in the clouds"
 tagline: "the return of cloud-init"
 image: /assets/images/blog/cloud.jpg
-featured: true
 ---
 
 When spinning up compute instances in the cloud, a proper and fully automated 
