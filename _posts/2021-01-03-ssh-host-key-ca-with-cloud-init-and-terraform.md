@@ -1,6 +1,6 @@
 ---
 layout: instance/blog-post
-title: "SSH host key CA with Terraform"
+title: "SSH host key CA with Cloud-Init (and Terraform)"
 tagline: "Securing your VPC with a SSH host key CA"
 image: /assets/images/blog/zion.jpg
 featured: true
