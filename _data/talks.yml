@@ -3,7 +3,43 @@ intro: |
   I love to talk about my findings at conferences and meetups.
   Find some of my recent and upcoming talks below.
 
-#upcoming:
+upcoming:
+  - name: "🔪 How we cut our AWS costs in half"
+    type: speaker-deck
+    conference: JAX 2023
+    conference_link: https://jax.de
+    date: 10 May 2023
+    link: https://jax.de/core-java-jvm-languages/java-flight-recorder-profiling-tool/
+    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    abstract: |
+        For this talk I joined forces with [@debe](https://github.com/debe)
+        and we're presenting our recent work for a customer where we cut the AWS
+        bill in half using a holisitic approach. It covered
+
+  - name: "(Open Source ) observability test drive workshop"
+    type: speaker-deck
+    conference: DevOpsCon Berlin 2023
+    conference_link: https://jax.de
+    date: 12 June 2023
+    link: https://devopscon.io/monitoring-observability/open-source-observability-test-drive-workshop/
+    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    abstract: |
+        Together with my fellow [ping7.io](https://ping7.io) co-founder
+        Henrik I'll conduct an interesting test-drive through open-source
+        observability software (full day workshop).
+
+  - name: "Searching large data sets in (near) constant time"
+    type: speaker-deck
+    conference: Berlin Buzzwords 2023
+    conference_link: https://2023.berlinbuzzwords.de/
+    date: 20 June 2023
+    link: https://program.berlinbuzzwords.de/berlin-buzzwords-2023/talk/KDT73L/
+    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    abstract: |
+        For this talk I joined forces with [@debe](https://github.com/debe)
+        and we're presenting our recent work for a customer where we enabled
+        the Apache Solr search engine to search through large data sets in near
+        constant time.
 
 recent:
   - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
@@ -21,13 +57,13 @@ recent:
   - name: "Workshop: Open Source Observability & Log Management für Container-Umgebungen"
     conference: DevOpsCon 2019
     conference_link: https://devopsconference.de
-    date: December 2019 
+    date: December 2019
     link: https://devopsconference.de/monitoring-traceability-diagnostics/monitoring-workshop-open-source-observability-and-log-management-in-container-environments/
     abstract: |
-        In this workshop we’ll walk through the building blocks of a modern monitoring and observability infrastructure 
-        (e.g. Filebeat, Logstash, Graylog, Elastic, Prometheus, Grafana). We’ll also shed light on other solutions like 
-        e.g. Loki and Kibana. We’ll start off with a naked Kubernetes cluster, extending the monitoring capabilities step 
-        by step. We’ll deploy typical monitoring targets like a Spring Boot application or a WordPress blog. Together 
+        In this workshop we’ll walk through the building blocks of a modern monitoring and observability infrastructure
+        (e.g. Filebeat, Logstash, Graylog, Elastic, Prometheus, Grafana). We’ll also shed light on other solutions like
+        e.g. Loki and Kibana. We’ll start off with a naked Kubernetes cluster, extending the monitoring capabilities step
+        by step. We’ll deploy typical monitoring targets like a Spring Boot application or a WordPress blog. Together
         we’ll develop monitoring strategies for applications, ingresses and the surrounding container environment.
 
   - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
@@ -49,13 +85,13 @@ recent:
     link: https://devopsconference.de/cloud-platforms-serverless/beyond-cloud-a-road-trip-into-aws-and-back-to-bare-metal/
     src: https://www.youtube.com/embed/amHBr2lOWYI
     abstract: |
-      Public cloud services have become a commodity asset in the past years. 
-      Shopping24 though is currently running all systems on pure bare metal. 
-      I’ll lay out Shopping24’s move into the Amazon AWS cloud a few years 
-      back and our recent journey back into a classic datacenter. The 
-      bottom line for doing effective DevOps in both classic and cloud 
+      Public cloud services have become a commodity asset in the past years.
+      Shopping24 though is currently running all systems on pure bare metal.
+      I’ll lay out Shopping24’s move into the Amazon AWS cloud a few years
+      back and our recent journey back into a classic datacenter. The
+      bottom line for doing effective DevOps in both classic and cloud
       infrastructure is automatization.
-  
+
   - name: Open Source Logging and Monitoring
     type: youtube
     conference: code.talks 2017, JAX 2017, W-JAX 2017
@@ -64,10 +100,10 @@ recent:
     link: https://jax.de/devops-continuous-delivery/open-source-logging-und-monitoring/
     src: https://www.youtube.com/embed/mhm11tp3baY
     abstract: |
-      Logging und Monitoring sind kein sexy Thema. Niemand hat Lust, sich auf 
-      Konsolen einzuloggen und Logdateien zu durchforsten. In Docker-Umgebungen 
-      potenziert sich das Problem noch einmal. Ich zeige in dieser Session das Zusammenspiel 
-      aus Logstash und Graylog zur Access-Loganalyse, Sentry zum Exception 
+      Logging und Monitoring sind kein sexy Thema. Niemand hat Lust, sich auf
+      Konsolen einzuloggen und Logdateien zu durchforsten. In Docker-Umgebungen
+      potenziert sich das Problem noch einmal. Ich zeige in dieser Session das Zusammenspiel
+      aus Logstash und Graylog zur Access-Loganalyse, Sentry zum Exception
       Logging sowie Graphite und Grafana zur Visualisierung von Anwendungsmetriken.
 
   - name: Context Driven Search Ranking and Faceting
@@ -78,11 +114,11 @@ recent:
     link: https://lucenesolrrevolution2017.sched.com/event/BAwb/context-driven-search-ranking-and-faceting
     src: https://www.youtube.com/embed/LoK_u6wrdDs
     abstract: |
-      In e-commerce, when searching over a wide range of products, sorting your search 
-      result is crucial to your business. You most likely want to sort your search 
-      result depending on the search context - like the dominating category or the user's 
-      search or order history. We built a Solr plugin to determine the current category 
-      "in flight" and change sorting and facetting of the current query without adding 
+      In e-commerce, when searching over a wide range of products, sorting your search
+      result is crucial to your business. You most likely want to sort your search
+      result depending on the search context - like the dominating category or the user's
+      search or order history. We built a Solr plugin to determine the current category
+      "in flight" and change sorting and facetting of the current query without adding
       any overhead to the query.
 
   - name: Ungefähr populär – Moderne Datenstrukturen im Einsatz
@@ -93,9 +129,9 @@ recent:
     link: https://jax.de/big-data-machine-learning/ungefaehr-populaer-moderne-datenstrukturen-im-einsatz/
     src: //speakerdeck.com/player/c7260e6c6e5642049520c47ff51d0ce5
     abstract: |
-      Mit Hadoop und diversen Streamingframeworks (Spark, Flink) steht ein ganzer 
-      Blumenstrauß an Tools bereit, um in (fast) Echtzeit auch große Datenmengen 
-      zu analysieren. Was aber wenn die benötigte Rechenleistung in keinem Verhältnis zum 
-      Problem steht? Hier helfen moderne Datenstrukturen wie z. B. der Bloom-Filter 
-      oder der Count-Min Sketch. Diese speichern sehr große Datenmengen auf 
+      Mit Hadoop und diversen Streamingframeworks (Spark, Flink) steht ein ganzer
+      Blumenstrauß an Tools bereit, um in (fast) Echtzeit auch große Datenmengen
+      zu analysieren. Was aber wenn die benötigte Rechenleistung in keinem Verhältnis zum
+      Problem steht? Hier helfen moderne Datenstrukturen wie z. B. der Bloom-Filter
+      oder der Count-Min Sketch. Diese speichern sehr große Datenmengen auf
       sehr kleinem Raum.
