@@ -8,9 +8,9 @@
 			</div><!--//container-->
 {% endcomment %}
         </div><!--//header-intro-->
-        
+
     </header><!--//header-->
-     
+
     <article class="resume-wrapper text-center position-relative">
 	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
 		    <header class="resume-header pt-4 pt-md-0">
@@ -31,7 +31,7 @@
 								{% endfor %}
 						    </ul>
 					    </div><!--//secondary-info-->
-					    
+
 				    </div><!--//media-body-->
 			    </div><!--//media-->
 		    </header>
@@ -53,7 +53,7 @@
 
 									{% for work in site.data.career.experience %}
 								    <article class="resume-timeline-item position-relative pb-5">
-									    
+
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
 										        <h3 class="resume-position-title font-weight-bold mb-1">{{ work.position }}</h3>
@@ -82,7 +82,7 @@
 									    </div><!--//resume-timeline-item-desc-->
 								    </article><!--//resume-timeline-item-->
 									{% endfor %}
-								    
+
 							    </div><!--//resume-timeline-->
 						    </div>
 					    </section><!--//experience-section-->
@@ -108,7 +108,7 @@
 						        </div><!--//resume-skill-item-->
 								{% endfor %}
 
-								{% for entry in site.data.skills.skills offset:2 %}      
+								{% for entry in site.data.skills.skills offset:2 %}
 						        <div class="resume-skill-item">
 						            <h4 class="resume-skills-cat font-weight-bold">{{ entry.name }}</h4>
 						            <ul class="list-inline">
@@ -121,7 +121,33 @@
 
 						    </div><!--resume-section-content-->
 					    </section><!--//skills-section-->
-					    <section class="resume-section education-section mb-5">
+
+						<section class="resume-section reference-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Community</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-awards-list">
+									{% for c in site.data.community %}
+								    <li class="mb-2 pl-4 position-relative">
+								        <i class="resume-award-icon fas fa-{{ c.icon }} position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name"><a href="{{ c.link }}">{{ c.name }}</a></div>
+								        <div class="resume-award-desc">{{ c.description }}</div>
+								    </li>
+									{% endfor %}
+							    </ul>
+						    </div>
+					    </section><!--//interests-section-->
+
+					    <section class="resume-section language-section mb-5">
+						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+						    <div class="resume-section-content">
+							    <ul class="list-unstyled resume-lang-list">
+									{% for language in site.data.personal.languages %}
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">{{ language.name }}</span> <small class="text-muted font-weight-normal">({{ language.grade }})</small></li>
+									{% endfor %}
+							    </ul>
+						    </div>
+					    </section><!--//language-section-->
+						<section class="resume-section education-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
@@ -135,16 +161,6 @@
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
-					    <section class="resume-section language-section mb-5">
-						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
-						    <div class="resume-section-content">
-							    <ul class="list-unstyled resume-lang-list">
-									{% for language in site.data.personal.languages %}
-								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">{{ language.name }}</span> <small class="text-muted font-weight-normal">({{ language.grade }})</small></li>
-									{% endfor %}
-							    </ul>
-						    </div>
-					    </section><!--//language-section-->
 					    <section class="resume-section interests-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 						    <div class="resume-section-content">
@@ -155,13 +171,13 @@
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
-					    
+
 				    </div>
 			    </div><!--//row-->
 		    </div><!--//resume-body-->
-		    
-		    
+
+
 	    </div>
-    </article>  
-    
+    </article>
+
 {% include footer.html %}

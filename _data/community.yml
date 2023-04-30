@@ -1,20 +1,29 @@
 ---
+  - name: ping7.io
+    link: https://ping7.io
+    icon: globe-africa
+    description: |
+      Managed Prometheus exporters as a service
+  - name: Maxmind GeoIP-API
+    link: https://github.com/observabilitystack/geoip-api
+    icon: map-marker
+    description: |
+      A REST API for Maxmind geoip datasets
+      with 3M pulls on Docker Hub
   - name: Search Technology Meetup Hamburg
     link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
-    description: I co-organize a roughly quartly meetup in Hamburg focussing on search technology.
+    description: |
+      I co-organize a roughly quartly meetup in Hamburg
+      focussing on search technology.
     icon: chalkboard
-#    - name: Oberservabilitystack (o12stack)
-#      link: https://observabilitystack.org
-#      description: |
-#        A integrated logging and monitoring solution for Kubernetes.
   - name: solr.cool
     link: http://solr.cool
     description: |
       A directory of various plugins for the Apache Solr server.
     icon: server
-  - name: BMAX Solr Query Parser
-    description: |
-      A boosting dismax query parser for Apache Solr focusing on e-comerce
-      queries.
-    link: https://github.com/shopping24/solr-bmax-queryparser
-    icon: server
+#  - name: BMAX Solr Query Parser
+#    description: |
+#      A boosting dismax query parser for Apache Solr focusing on e-comerce
+#      queries.
+#    link: https://github.com/shopping24/solr-bmax-queryparser
+#    icon: server

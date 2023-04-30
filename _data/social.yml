@@ -5,15 +5,15 @@
 - name: "@tboeghk"
   link: https://github.com/tboeghk
   icon: github
-- name: "Xing"
-  link: https://www.xing.com/profile/TorstenBogh_Koester
-  icon: xing
-- name: "Flickr"
-  link: https://www.flickr.com/people/tboeghk/
-  icon: flickr
-- name: "Docker"
-  link: https://hub.docker.com/u/tboeghk
-  icon: docker
+- name: "LinkedIn"
+  link: https://www.linkedin.com/in/torsten-boegh-koester/
+  icon: linkedin
+- name: "@tboeghk"
+  link: https://hachyderm.io/@tboeghk
+  icon: mastodon
+#- name: "Flickr"
+#  link: https://www.flickr.com/people/tboeghk/
+#  icon: flickr
 - name: "meetup.com"
   link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
   icon: meetup
