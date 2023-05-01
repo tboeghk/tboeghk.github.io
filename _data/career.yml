@@ -1,8 +1,8 @@
 ---
-summary: | 
-    As a software engineer I have expert level knowledge in constructing, developing and 
-    running high traffic web applications. I embrace open source software and am passionate 
-    about agile software development with Scrum. I am metric driven, have a passion for 
+summary: |
+    As a software engineer I have expert level knowledge in constructing, developing and
+    running high traffic web applications. I embrace open source software and am passionate
+    about agile software development with Scrum. I am metric driven, have a passion for
     log management and love to talk about my findings at conferences and meetups.
 experience:
   - company: Freelancer
@@ -15,16 +15,26 @@ experience:
       with _infrastructure as code_ and _observability_ in mind both in the cloud and
       on-premise.
     projects:
+      - Bridging the gap between devs and AWS cloud infrastructure in a e-commerce search
+        project. Introduced Prometheus based observability and led a team overhauling
+        the overall system architecture.
+      - Introduced sharding into a e-commerce Solr search platform. Refactored all internal
+        components and made algorithms sharding ready. Also updated the installation from
+        the Solr 7.x release train to Solr 8.11 and onwards to Solr 9.
+      - Acting as a trusted advisor for a junior search team taking over a aging
+        Solr search infrastructure. Guided them through the overhaul of the autocomplete
+        to get to know their search infrastructure.
       - Introduction of Ansible and infrastructure as code in a large on-premise infrastructure.
         Automated and scalable setup of Kubernetes clusters using Ansible and kubeadm.
         Log management and monitoring for two data centers using Graylog and Prometheus.
       - Seeding the idea of infrastructure as code for both on-premise and cloud infrastructure.
-        Setup of SaltStack for the on-premise environment and Terraform for AWS infrastructure. 
+        Setup of SaltStack for the on-premise environment and Terraform for AWS infrastructure.
         Automated setup of Kubernetes (EKS) clusters including VPCs and ingress handling.
       - Migration from on-premise infrastructure to Google GCP including site-2-site VPN, dialin
         VPN and scalable Kubernetes clusters.
       #- Portable Workshop cloud
     technologies:
+      - Solr
       - Ansible
       - Kubernetes
       - Terraform
@@ -35,16 +45,16 @@ experience:
       - Google GCP
       - Traefik
       - Keycloak
-  
+
   - company: shopping24 internet group
     position: Engineering Lead (CTO)
     from: 2012
     to: 2019
     description: |
-      As CTO I am accountable for developing and operating the shopping24 product 
-      search platform. Together with the engineering team I maintain the api and search backend 
-      based on Apache Solr, the product backend systems (Java) and the portal 
-      frontends (PHP). I code on a regular basis in both operations and search 
+      As CTO I am accountable for developing and operating the shopping24 product
+      search platform. Together with the engineering team I maintain the api and search backend
+      based on Apache Solr, the product backend systems (Java) and the portal
+      frontends (PHP). I code on a regular basis in both operations and search
       and assist the teams in system- and software architecture challenges.
     projects:
       - "Insourcing of server operations: Development of a centralized configuration management using Ansible. Setup of a hybrid cloud hosting using bare metal, VMWare and KVM hypervisors as well as Amazon AWS. Recently pushing the transition into containerization using Docker, Kubernetes and Ceph as distributed storage."
@@ -78,7 +88,7 @@ experience:
     from: 2010
     to: 2012
     description: |
-      As a team lead responsible for restructuring and refactoring 
+      As a team lead responsible for restructuring and refactoring
       the Java API and product management backend.
     projects:
       - Recruitment and training of the Java development team. Insourcing of Java development and application support for the existing Java applications.
@@ -113,10 +123,10 @@ experience:
     from: 2005
     to: 2010
     description: |
-      Developer, architect and in-house consultant for Java based 
-      projects focusing on integrating legacy systems into modern 
-      web UIs. Technical lead for internet and intranet web applications. 
-      Maintainer of the Java development and continuous integration 
+      Developer, architect and in-house consultant for Java based
+      projects focusing on integrating legacy systems into modern
+      web UIs. Technical lead for internet and intranet web applications.
+      Maintainer of the Java development and continuous integration
       infrastructure.
     projects:
       - Prepared and led advanced in-house Java, Spring Framework, Maven & Eclipse trainings
@@ -144,7 +154,7 @@ experience:
     from: 2002
     to: 2005
     description: |
-      Acquired and implemented Java and PHP development jobs. Gained 
+      Acquired and implemented Java and PHP development jobs. Gained
       knowledge of Linux server administration in high traffic environments
       as systems administrator for the largest soccer community in Germany.
     technologies:
@@ -158,7 +168,7 @@ experience:
     from: 2000
     to: 2002
     description: |
-      Developed custom tailored applications for german high traffic 
+      Developed custom tailored applications for german high traffic
       websites in PHP and Perl.
     technologies:
       - PHP
