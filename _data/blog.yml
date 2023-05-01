@@ -1,4 +1,6 @@
 slug: "I blog both #dev and #ops"
+intro: |
+  I also blog
 default_images:
   - "/assets/images/blog/blog-post-thumb-2.jpg"
   - "/assets/images/blog/blog-post-thumb-3.jpg"
@@ -6,3 +8,30 @@ default_images:
   - "/assets/images/blog/blog-post-thumb-6.jpg"
   - "/assets/images/blog/blog-post-thumb-9.jpg"
   - "/assets/images/blog/blog-post-thumb-10.jpg"
+
+external:
+  - title: Synthetic response and uptime monitoring using the Prometheus Blackbox Exporter
+    date: 2023-02-28
+    image: https://cdn-images-1.medium.com/fit/t/1600/480/1*09-_Of8pVwvsozlgtPZI5Q.png
+    blog:
+      url: https://blog.ping7.io
+      name: blog.ping7.io
+    excerpt: |
+      In e-commerce, response time is king. Regarding onsite search engines,
+      response time tends to increase linearly with the number of products
+      sold in an online shop. In a recent project, we enhanced a
+      Solr search engine to overcome this barrier. We used the Prometheus Blackbox Exporter
+      for progress validation (and regression detection).
+    url: https://blog.ping7.io/synthetic-response-and-uptime-monitoring-using-the-prometheus-blackbox-exporter-52d82d3b5048
+
+  - title: Terraform state drift detection in GitHub Actions
+    date: 2023-02-21
+    image: https://cdn-images-1.medium.com/fit/t/1600/480/0*XSPiAYwKcjZtJ8Qt
+    blog:
+      url: https://blog.ping7.io
+      name: blog.ping7.io
+    excerpt: |
+      One of the annoying things to deal with when it comes to Terraform infrastructure is
+      Terraform state drift, which describes the mismatch between the configured Terraform
+      resources and the infrastructure reality.
+    url: https://blog.ping7.io/terraform-state-drift-detection-in-github-actions-17ddce8da2a7

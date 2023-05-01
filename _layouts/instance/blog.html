@@ -1,5 +1,5 @@
 {% include header.html %}
-        
+
         <div class="header-intro theme-bg-primary text-white py-5">
 	        <div class="container position-relative">
 		        <div class="media flex-column flex-md-row">
@@ -9,16 +9,70 @@
 			            <div class="page-heading-tagline mb-3">{{ site.data.blog.slug }}</div>
 			        </div>
 		        </div>
-		       
-		        
+
+
 	        </div><!--//container-->
         </div><!--//header-intro-->
-        
+
     </header><!--//header-->
-        
+
+	<section class="skills-section section pt-5">
+        <div class="container">
+			<h3 class="section-title font-weight-bold text-center mb-3">Guest blog posts</h3>
+	        <div class="section-intro mx-auto text-center mb-5 text-secondary">
+				I strive to publish blog posts on other blogs than this one.
+				Here are the most recent ones.
+			</div>
+			<div class="container blog-cards">
+				<div class="row">
+
+					{% for post in site.data.blog.external limit:2 %}
+					<div class="col-12 col-md-6 col-lg-6 mb-5">
+						<div class="card rounded-0 border-0 shadow-sm eq-height">
+							<div class="card-img-container position-relative">
+								<img class="card-img-top rounded-0" src="{{ post.image | default: site.data.blog.default_images | sample }}" alt="">
+								<div class="card-img-overlay overlay-mask text-center p-0">
+									<div class="overlay-mask-content text-center w-100 position-absolute">
+										<a class="btn btn-primary" href="{{ post.url }}">Read more</a>
+									</div>
+									<a class="overlay-mask-link position-absolute w-100 h-100" href="{{ post.url }}"></a>
+								</div>
+							</div>
+							<div class="card-body pb-4">
+
+								<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+								<div class="card-text">
+									<div class="excerpt">{{ post.excerpt | strip_html }}</div>
+								</div>
+
+							</div>
+							<div class="card-footer border-0">
+								<ul class="meta list-inline mb-0">
+									<li class="list-inline-item mr-3 float-end">
+										<a href="{{ post.blog.url }}">
+											<i class="fas fa-globe-europe mr-2"></i>{{ post.blog.name }}
+										</a>
+									</li>
+									<li class="list-inline-item mr-3"><i class="far fa-clock mr-2"></i>{{ post.date | date_to_string }}</li>
+								</ul>
+							</div>
+						</div><!--//card-->
+					</div>
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</section>
+
     <section class="section pt-5">
-        <div class="container blog-cards">	        
-	        
+		<div class="container">
+			<h3 class="section-title font-weight-bold text-center mb-3">Personal blog</h3>
+			<div class="section-intro mx-auto text-center mb-5 text-secondary">
+				Here are some blog posts regarding #dev and #ops.
+			</div>
+		</div>
+        <div class="container blog-cards">
 	        <div class="row">
 
 				{% for post in site.posts %}
@@ -26,14 +80,14 @@
 		        <div class="col-12">
 			        <div class="featured-card d-md-table card rounded-0 border-0 shadow-sm mb-5">
 						<div class="featured-card-image card-img-container position-relative d-md-table-cell"
-							 style="background-image: url({{ post.image | default: site.data.blog.default_images | sample }});">					        
+							 style="background-image: url({{ post.image | default: site.data.blog.default_images | sample }});">
 						    <span class="badge badge-success mb-2 position-absolute">Featured</span>
 						    <div class="card-img-overlay overlay-mask text-center p-0">
 						        <a class="overlay-mask-link position-absolute w-100 h-100" href="{{ post.url }}"></a>
 							</div>
 						</div>
 						<div class="featured-card-body card-body d-md-table-cell pb-4">
-							
+
 							<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a> {{ post.language }}</h4>
 							<div class="card-text">
 								<div class="excerpt mb-3"> {{ post.excerpt | strip_html }}</div>
@@ -51,7 +105,7 @@
 				{% break %}
 				{% endif %}
 				{% endfor %}
-				
+
 				{% for post in site.posts %}
 				{% unless post.featured %}
 		        <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -66,13 +120,13 @@
 							</div>
 						</div>
 						<div class="card-body pb-4">
-							
+
 							<h4 class="card-title mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h4>
 							<div class="card-text">
-								
+
 								<div class="excerpt">{{ post.excerpt | strip_html }}</div>
 							</div>
-							
+
 						</div>
 						<div class="card-footer border-0">
 							<ul class="meta list-inline mb-0">
@@ -93,9 +147,9 @@
 			        <a class="btn-blog-more btn btn-primary btn-block text-white font-weight-bold">Load more posts...</a>
 				</div>
 {% endcomment %}
-		        
+
 	        </div>
         </div><!--//container-->
     </section><!--//section-->
-    
+
 	{% include footer.html %}

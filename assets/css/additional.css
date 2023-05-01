@@ -51,6 +51,10 @@ div.highlighter-rouge {
     margin-bottom: 2em;
 }
 
+.float-end {
+    float: right;
+}
+
 
 
 /* Pillar */
@@ -59,10 +63,9 @@ div.highlighter-rouge {
 }
 
 .resume-company-name {
-    white-space: nowrap;    
+    white-space: nowrap;
 }
 
 .footer, .footer a {
     color: #bbb;
 }
-
