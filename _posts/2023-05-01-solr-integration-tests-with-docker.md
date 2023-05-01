@@ -1,6 +1,6 @@
 ---
 layout: instance/blog-post
-title: "Solr integration tests with Docker"
+title: "Solr integration tests with Docker and Testcontainers"
 tagline: "super duty, super safe"
 featured: true
 image: /assets/images/blog/zion.jpg
