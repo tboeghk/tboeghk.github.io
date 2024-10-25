@@ -6,8 +6,13 @@ is not free. A usage license must be purchased by
 
 ## Running locally
 
-```
+```bash
 docker run -it -v $(pwd):/srv/jekyll \
     -p 4000:4000 jekyll/jekyll:3.8 \
     jekyll serve --watch
 ```
+
+## Future blog post ideas
+
+- AWS Node Exporter Metrics
+- Alertecho

@@ -1,8 +1,8 @@
 ---
-  intro: | 
+  intro: |
     I have more than 10 years experience building and operating large scale
-    search applications primary for ecommerce clients. Below is a quick overview 
-    of my main technical skill set and tools I use on a regular basis. Want 
+    search applications primary for ecommerce clients. Below is a quick overview
+    of my main technical skill set and tools I use on a regular basis. Want
     to find out more about my experience? [Check out my full resume](resume.html)
   skills:
     - name: Search
@@ -14,17 +14,17 @@
         grade: 90%
       - name: PostgreSQL
         grade: 90%
-      - name: NLP / NER / Learn To Rank
+      - name: GenAI / NLP / NER / Learn To Rank
         grade: 80%
-      - name: Elasticsearch
+      - name: Elasticsearch / OpenSearch
         grade: 70%
     - name: Operations
       icon: server
       skills:
+      - name: Prometheus, Grafana
+        grade: 95%
       - name: Ansible, Terraform
         grade: 95%
-      - name: Prometheus, Grafana
-        grade: 90%
       - name: Logstash, ELK & Graylog
         grade: 90%
       - name: Kubernetes & Docker
@@ -37,10 +37,10 @@
       - name: CI/CD
         grade: 95%
       - name: Maven
-      - name: Git & GitHub
+      - name: Git, GitHub & GitHub Actions
       - name: AWS, Digital Ocean, GCP
       - name: Apple DEP & MDM
-      - name: Jenkins & Travis CI
+      - name: Jenkins
       - name: Filebeat
       - name: Artifactory
       - name: Tomcat

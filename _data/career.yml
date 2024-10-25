@@ -10,10 +10,9 @@ experience:
     from: 2019
     to: present
     description: |
-      As a Senior Search & Operations Engineer I cater both customers facing challenges
-      in their search or operations environment (or both). I build Kubernetes clusters
-      with _infrastructure as code_ and _observability_ in mind both in the cloud and
-      on-premise.
+      I support customers facing challenges in their search or operations environment (or both).
+      I build Kubernetes clusters with _infrastructure as code_ and _observability_ in mind both
+      in the cloud and on-premise.
     projects:
       - Bridging the gap between devs and AWS cloud infrastructure in a e-commerce search
         project. Introduced Prometheus based observability and led a team overhauling
@@ -45,13 +44,29 @@ experience:
       - Google GCP
       - Traefik
       - Keycloak
+      - Packer
+
+  - company: ping7.io
+    position: Co-Founder
+    from: 2022
+    to: 2024
+    description: |
+      Founded ping7.io together with Henrik to offer managed exporters for Prometheus.
+      In a first phase we offered global installations of the Blackbox Exporter to
+      supply website uptime metrics to you Prometheus instance. We utilised multiple
+      cloud providers for a efficient but globally distributed setup.
+    technologies:
+      - Prometheus Blackbox Exporter
+      - Spring Boot
+      - Spring Cloud Gateway
+      - Hetzner Cloud
 
   - company: shopping24 internet group
     position: Engineering Lead (CTO)
     from: 2012
     to: 2019
     description: |
-      As CTO I am accountable for developing and operating the shopping24 product
+      Accountable for developing and operating the shopping24 product
       search platform. Together with the engineering team I maintain the api and search backend
       based on Apache Solr, the product backend systems (Java) and the portal
       frontends (PHP). I code on a regular basis in both operations and search
@@ -88,7 +103,7 @@ experience:
     from: 2010
     to: 2012
     description: |
-      As a team lead responsible for restructuring and refactoring
+      Responsible for restructuring and refactoring
       the Java API and product management backend.
     projects:
       - Recruitment and training of the Java development team. Insourcing of Java development and application support for the existing Java applications.

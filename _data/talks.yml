@@ -1,32 +1,23 @@
 ---
-intro: |
+intro: >
   I love to talk about my findings at conferences and meetups.
-  Find some of my recent and upcoming talks below.
+  Find some of my recent talks below.
 
 upcoming:
+
+
+recent:
   - name: "🔪 How we cut our AWS costs in half"
     type: speaker-deck
     conference: JAX 2023
     conference_link: https://jax.de
     date: 10 May 2023
     link: https://jax.de/core-java-jvm-languages/java-flight-recorder-profiling-tool/
-    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    src: //speakerdeck.com/player/3b4ddafa00204bdab2f5a9369e5ad402?slide=12
     abstract: |
         For this talk I joined forces with [@debe](https://github.com/debe)
         and we're presenting our recent work for a customer where we cut the AWS
         bill in half using a holisitic approach. It covered
-
-  - name: "(Open Source ) observability test drive workshop"
-    type: speaker-deck
-    conference: DevOpsCon Berlin 2023
-    conference_link: https://jax.de
-    date: 12 June 2023
-    link: https://devopscon.io/monitoring-observability/open-source-observability-test-drive-workshop/
-    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
-    abstract: |
-        Together with my fellow [ping7.io](https://ping7.io) co-founder
-        Henrik I'll conduct an interesting test-drive through open-source
-        observability software (full day workshop).
 
   - name: "Searching large data sets in (near) constant time"
     type: speaker-deck
@@ -34,14 +25,25 @@ upcoming:
     conference_link: https://2023.berlinbuzzwords.de/
     date: 20 June 2023
     link: https://program.berlinbuzzwords.de/berlin-buzzwords-2023/talk/KDT73L/
-    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+    src: https://www.youtube.com/embed/crK5e0n8GYA
     abstract: |
         For this talk I joined forces with [@debe](https://github.com/debe)
         and we're presenting our recent work for a customer where we enabled
         the Apache Solr search engine to search through large data sets in near
         constant time.
 
-recent:
+#  - name: "(Open Source ) observability test drive workshop"
+#    type: speaker-deck
+#    conference: DevOpsCon Berlin 2023
+#    conference_link: https://jax.de
+#    date: 12 June 2023
+#    link: https://devopscon.io/monitoring-observability/open-source-observability-test-drive-workshop/
+#    #src: //speakerdeck.com/player/a78e36e34599479f86488ee4d22bfd25
+#    abstract: |
+#        Together with my fellow [ping7.io](https://ping7.io) co-founder
+#        Henrik I'll conduct an interesting test-drive through open-source
+#        observability software (full day workshop).
+
   - name: "Logging für Microservices und Container: Wir bauen eine Shared-Nothing-Logging-Infrastruktur"
     type: speaker-deck
     conference: JAX 2019
@@ -54,17 +56,17 @@ recent:
         and we're presenting our approach combining a shared nothing architecture with a
         centralized logging approach (German version).
 
-  - name: "Workshop: Open Source Observability & Log Management für Container-Umgebungen"
-    conference: DevOpsCon 2019
-    conference_link: https://devopsconference.de
-    date: December 2019
-    link: https://devopsconference.de/monitoring-traceability-diagnostics/monitoring-workshop-open-source-observability-and-log-management-in-container-environments/
-    abstract: |
-        In this workshop we’ll walk through the building blocks of a modern monitoring and observability infrastructure
-        (e.g. Filebeat, Logstash, Graylog, Elastic, Prometheus, Grafana). We’ll also shed light on other solutions like
-        e.g. Loki and Kibana. We’ll start off with a naked Kubernetes cluster, extending the monitoring capabilities step
-        by step. We’ll deploy typical monitoring targets like a Spring Boot application or a WordPress blog. Together
-        we’ll develop monitoring strategies for applications, ingresses and the surrounding container environment.
+#  - name: "Workshop: Open Source Observability & Log Management für Container-Umgebungen"
+#    conference: DevOpsCon 2019
+#    conference_link: https://devopsconference.de
+#    date: December 2019
+#    link: https://devopsconference.de/monitoring-traceability-diagnostics/monitoring-workshop-open-source-observability-and-log-management-in-container-environments/
+#    abstract: |
+#        In this workshop we’ll walk through the building blocks of a modern monitoring and observability infrastructure
+#        (e.g. Filebeat, Logstash, Graylog, Elastic, Prometheus, Grafana). We’ll also shed light on other solutions like
+#        e.g. Loki and Kibana. We’ll start off with a naked Kubernetes cluster, extending the monitoring capabilities step
+#        by step. We’ll deploy typical monitoring targets like a Spring Boot application or a WordPress blog. Together
+#        we’ll develop monitoring strategies for applications, ingresses and the surrounding container environment.
 
   - name: "Kubernetes the ❤️ way: Putting Kubernetes into production"
     type: speaker-deck

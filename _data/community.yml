@@ -1,15 +1,15 @@
 ---
-  - name: ping7.io
-    link: https://ping7.io
-    icon: globe-africa
-    description: |
-      Managed Prometheus exporters as a service
+#  - name: ping7.io
+#    link: https://ping7.io
+#    icon: globe-africa
+#    description: |
+#      Managed Prometheus exporters as a service
   - name: Maxmind GeoIP-API
     link: https://github.com/observabilitystack/geoip-api
     icon: map-marker
     description: |
       A REST API for Maxmind geoip datasets
-      with 3M pulls on Docker Hub
+      with 5M pulls on Docker Hub
   - name: Search Technology Meetup Hamburg
     link: https://www.meetup.com/Search-Technology-Meetup-Hamburg/
     description: |
