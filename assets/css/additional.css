@@ -45,6 +45,17 @@
     color: #333;
 }
 
+.single-post-wrapper img {
+    max-width: 100%;
+}
+
+.single-post-wrapper blockquote {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #eee;
+}
+
 div.highlighter-rouge {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
     padding: 1em;

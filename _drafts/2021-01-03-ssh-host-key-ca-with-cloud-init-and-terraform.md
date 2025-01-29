@@ -3,14 +3,14 @@ layout: instance/blog-post
 title: "SSH host key CA with Cloud-Init (and Terraform)"
 tagline: "Securing your VPC with a SSH host key CA"
 image: /assets/images/blog/zion.jpg
-featured: true
+#featured: true
 ---
 
 When dealing with volatile infrastructure, we treat servers
-as cattle not pets. In a VPC, jumphost servers might even 
+as cattle not pets. In a VPC, jumphost servers might even
 be launched on demand only. To ensure that we only connect
-to trusted servers launched by us, we can establish a 
-Certificate Authority for our SSH host keys. 
+to trusted servers launched by us, we can establish a
+Certificate Authority for our SSH host keys.
 
 <!--more-->
 
@@ -24,10 +24,10 @@ user:
 $ ssh in-awe.fra1.o11ystack.org
 The authenticity of host 'in-awe.fra1.o11ystack.org (157.245.24.111)' can't be established.
 ECDSA key fingerprint is SHA256:EinMrd6XfGaRBgP2hnu...
-Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
 `````
 
-In reality, nobody really checks the SSH host key upon 
+In reality, nobody really checks the SSH host key upon
 login. The message is either always discarded with _yes_
 or configured away in your _~/.ssh/config_ via
 
@@ -63,12 +63,12 @@ Please contact your system administrator.
 ````
 
 Again, reality strikes again: The mismatching lines gets deleted
-from the _/.ssh/known_hosts_ file and voila: everything is fine. 
+from the _/.ssh/known_hosts_ file and voila: everything is fine.
 Or is it?
 
 ## SSH host key CA
 
-The basic idea is to have a Certificate Authority (CA) signing 
+The basic idea is to have a Certificate Authority (CA) signing
 each SSH host key. The CA's public key is known to the client
 and can be used to verify the authenticity of the server.
 
@@ -90,7 +90,7 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNh...
 ### Signing host keys
 
 As we are dealing with volatile infrastructure, we want to sign every
-SSH host key of every server we create. I use 
+SSH host key of every server we create. I use
 [cloud-init to set up servers](https://www.thiswayup.de/blog/2020/configuration-management-in-the-clouds.html)
 as it integrates seamlessly with [Terraform](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/cloudinit_config) and ~~most~~ all cloud providers.
 
@@ -136,7 +136,7 @@ runcmd:
 
 When signing the key you need to configure the principals (_-n_)
 (FQDNs and server names) the host can be reached with. The example
-above registers the hostname and the IPs configured. 
+above registers the hostname and the IPs configured.
 
 ````bash
 $ hostname
@@ -160,5 +160,5 @@ In the example above the certificate is valid for 5 years.
 
 Well, we are copying the CA's private key to the server. I'd love to
 avoid that and precompute the host's SSH keys, but unfortunately this
-is currently not possible in plain Terraform (only using external 
+is currently not possible in plain Terraform (only using external
 data providers).
