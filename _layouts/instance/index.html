@@ -1,5 +1,5 @@
 {% include header.html %}
-        
+
         <div class="header-intro theme-bg-primary text-white py-5">
 	        <div class="container">
 		        <div class="profile-teaser media flex-column flex-md-row">
@@ -11,26 +11,26 @@
 						{{ site.data.personal.intro | markdownify }}
 					</div><!--//bio-->
 					<a class="theme-btn-on-bg btn font-weight-bold theme-btn-cta" href="mailto:tbk@thiswayup.de">Let's Talk</a>
-					
+
 					</div><!--//media-body-->
 				</div><!--//profile-teaser-->
-		        
+
 	        </div><!--//container-->
         </div><!--//header-intro-->
-        
+
     </header><!--//header-->
-        
+
     <section class="skills-section section py-5">
         <div class="container">
 	        <h3 class="section-title font-weight-bold text-center mb-3">Skills Overview</h3>
 	        <div class="section-intro mx-auto text-center mb-5 text-secondary">
 				{{ site.data.skills.intro | markdownify }}
 			</div>
-	        
+
 	        <div class="skills-blocks mx-auto pt-5">
 		        <div class="row">
 
-					{% for group in site.data.skills.skills %}
+					{% for group in site.data.skills.skills limit:3 %}
 			        <div class="skills-block col-12 col-lg-4 mb-5 mb-3 mb-lg-0">
 				        <div class="skills-block-inner bg-white shadow-sm py-4 px-5 position-relative">
 					        <h4 class="skills-cat text-center mb-3 mt-5">{{ group.name }}</h4>
@@ -45,17 +45,17 @@
 				        </div><!--//skills-block-inner-->
 			        </div><!--//skills-block-->
 					{% endfor %}
-			        
+
 		        </div><!--//row-->
 	        </div>
         </div><!--//container-->
     </section><!--//skills-section-->
-    
+
 {% comment %}
     <section class="section-latest-blog py-5 bg-white">
         <div class="container">
 	        <h3 class="section-title font-weight-bold text-center mb-5">Latest Blog Posts</h3>
-	        
+
 	        <div class="blog-cards row">
 		        <div class="col-12 col-lg-6">
 			        <div class="card rounded-0 border-0 shadow-sm mb-5">
@@ -69,7 +69,7 @@
 							</div>
 						</div>
 						<div class="card-body pb-4">
-							
+
 							<h4 class="card-title text-truncate mb-2"><a href="blog-post.html">How to Create an Angular Library</a></h4>
 							<div class="card-text">
 								<ul class="meta list-inline mb-1">
@@ -81,7 +81,7 @@
 						</div>
 				    </div><!--//card-->
 		        </div>
-		        
+
 		        <div class="col-12 col-lg-6">
 			        <div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
@@ -94,7 +94,7 @@
 							</div>
 						</div>
 						<div class="card-body pb-4">
-							
+
 							<h4 class="card-title text-truncate mb-2"><a href="blog-post.html">React, Bootstrap, and Angular- The Basics</a></h4>
 							<div class="card-text">
 								<ul class="meta list-inline mb-1">
@@ -106,8 +106,8 @@
 						</div>
 				    </div><!--//card-->
 		        </div>
-		        
-		        
+
+
 		        <div class="col-12 col-lg-6">
 			        <div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
@@ -120,7 +120,7 @@
 							</div>
 						</div>
 						<div class="card-body pb-4">
-							
+
 							<h4 class="card-title text-truncate mb-2"><a href="blog-post.html">Best Practices for Code Review</a></h4>
 							<div class="card-text">
 								<ul class="meta list-inline mb-1">
@@ -132,7 +132,7 @@
 						</div>
 				    </div><!--//card-->
 		        </div>
-		        
+
 		        <div class="col-12 col-lg-6">
 			        <div class="card rounded-0 border-0 shadow-sm mb-5">
 						<div class="card-img-container position-relative">
@@ -145,7 +145,7 @@
 							</div>
 						</div>
 						<div class="card-body pb-4">
-							
+
 							<h4 class="card-title text-truncate mb-2"><a href="blog-post.html">Learn React Components</a></h4>
 							<div class="card-text">
 								<ul class="meta list-inline mb-1">
@@ -157,19 +157,19 @@
 						</div>
 				    </div><!--//card-->
 		        </div>
-		        
-		        
+
+
 	        </div><!--//blog-cards-->
 
-	        
+
         </div>
-        
+
         <div class="text-center">
             <a class="btn btn-primary" href="blog.html">View all posts</a>
         </div>
-        
-        
+
+
     </section>
 {% endcomment %}
-    
+
 {% include footer.html %}

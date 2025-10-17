@@ -14,12 +14,21 @@ experience:
       I build Kubernetes clusters with _infrastructure as code_ and _observability_ in mind both
       in the cloud and on-premise.
     projects:
+      - Built a Google Gemini based product discovery chatbot for a large ecommerce client.
+        I focused on the observability aspects using Langfuse to monitor and track LLM
+        interactions.
+      - Prototyped a search engine and ui for a agricultural publishing house
+        using GenAI techniques. It showcased various approaches including an LLM based
+        clustering of search results and a RAG based question answering system.
+      - Reduced cloud costs by 50% for an e-commerce search engine using an holisitic approach.
+        This included an overhaul of the system architecture and also implemeting custom
+        Solr plugins to reduce resource consumption for long running queries.
       - Bridging the gap between devs and AWS cloud infrastructure in a e-commerce search
         project. Introduced Prometheus based observability and led a team overhauling
         the overall system architecture.
       - Introduced sharding into a e-commerce Solr search platform. Refactored all internal
         components and made algorithms sharding ready. Also updated the installation from
-        the Solr 7.x release train to Solr 8.11 and onwards to Solr 9.
+        the Solr 7.x release train to Solr 8.11 and onwards to Solr 9.9.
       - Acting as a trusted advisor for a junior search team taking over a aging
         Solr search infrastructure. Guided them through the overhaul of the autocomplete
         to get to know their search infrastructure.
@@ -45,6 +54,20 @@ experience:
       - Traefik
       - Keycloak
       - Packer
+
+  - company: midmind.de
+    position: Entrepeneur
+    from: 2025
+    to: present
+    description: |
+      Started midmind.de to support my wife (a midwive) with an AI powered knowledge base
+      using a RAG approiach on proofed literature and guidelines. The platform is currently in
+      private beta and is my testing ground for RAG and LLM observability.
+    technologies:
+      - Spring AI
+      - PGVector
+      - OpenAI
+      - Langfuse
 
   - company: ping7.io
     position: Co-Founder

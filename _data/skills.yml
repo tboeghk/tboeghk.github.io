@@ -9,23 +9,36 @@
       icon: database
       skills:
       - name: Solr & Lucene
-        grade: 95%
+        grade: 100%
       - name: Java / Spring Boot
         grade: 90%
       - name: PostgreSQL
         grade: 90%
-      - name: GenAI / NLP / NER / Learn To Rank
+      - name: GenAI / LLM / NLP / NER
         grade: 80%
       - name: Elasticsearch / OpenSearch
+        grade: 70%
+    - name: Observability
+      icon: eye
+      skills:
+      - name: Prometheus, Grafana
+        grade: 100%
+      - name: FluentBit & Loki
+        grade: 95%
+      - name: Langfuse & Elastic APM
+        grade: 80%
+      - name: CI/CD with GitHub Actions
+        grade: 75%
+      - name: Alertmanager & PagerDuty
         grade: 70%
     - name: Operations
       icon: server
       skills:
-      - name: Prometheus, Grafana
+      - name: Terraform, Ansible
         grade: 95%
-      - name: Ansible, Terraform
+      - name: Digital Ocean & Hetzner Cloud
         grade: 95%
-      - name: Logstash, ELK & Graylog
+      - name: Hyperscaler Clouds (AWS, GCP)
         grade: 90%
       - name: Kubernetes & Docker
         grade: 85%
@@ -38,10 +51,7 @@
         grade: 95%
       - name: Maven
       - name: Git, GitHub & GitHub Actions
-      - name: AWS, Digital Ocean, GCP
-      - name: Apple DEP & MDM
       - name: Jenkins
-      - name: Filebeat
       - name: Artifactory
       - name: Tomcat
       - name: Nginx
@@ -50,5 +60,3 @@
       - name: Redis
       - name: LDAP
       - name: Zookeeper
-      - name: Salt Stack
-      - name: Munki
